@@ -1,3 +1,8 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
 #header-img{
     width: 250px;
 }
@@ -8,4 +13,13 @@
 }
 section{
     margin-top: 200px;
+}
+form{
+    margin: 5em auto;
+    text-align: center;
+}
+@media screen and (min-width: 600px){
+    section{
+        margin-top: 100px;
+    }
 }
