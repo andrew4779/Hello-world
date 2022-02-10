@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -12,14 +15,65 @@ header{
     gap: 50px;
 }
 section{
-    margin-top: 200px;
+    margin: 100px auto;
+    max-width: 900px;
 }
-form{
-    margin: 5em auto;
+#features .grid{
+    margin-bottom: 2em;
+}
+#how-it-works{
     text-align: center;
 }
-@media screen and (min-width: 600px){
+#pricing{
+    display: flex;
+    justify-content: space-between;
+}
+#pricing .product{
+    width: 250px;
+    border: 1px solid #000;
+    text-align: center;
+}
+#pricing ol{
+    list-style-type: none;
+    padding: 0 !important;
+}
+#pricing .btn{
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    font-size: 1em;
+}
+#pricing .level{
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+form{
+    margin: 0 auto 5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 1em;
+}
+#submit{
+    width: 150px;
+    margin: 0 auto;
+    background-color: #f1c40f;
+    font-size: 1em;
+    font-weight: 900;
+    border: none;
+}
+@media screen and (max-width: 600px){
     section{
         margin-top: 100px;
     }
+}
+.cta{
+    margin: 2em auto 0.5em;
+    text-align: center;
 }
